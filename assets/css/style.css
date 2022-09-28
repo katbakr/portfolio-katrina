@@ -1,6 +1,8 @@
 * {
     box-sizing: border-box
-    
     font-size: 16px;
     line-height: 1.5rem;
+}
+.personal img {
+    max-width: 20%;
 }
