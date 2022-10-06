@@ -81,17 +81,17 @@ article {
     max-width: 25%;
     border: 15px solid rgb(231, 231, 231);
 }
-.about-me-box {
-    padding: 20px;
+
+.content {
+    width: 90%;
+    margin-left: 20px;
+}
+.info {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin: 20px;
-    /* border: 15px solid rgb(44, 44, 44);
-    box-shadow: 10px 10px 2px white;
-    margin: 60px 45px 20px 45px;
-    background-color: rgb(44, 44, 44);
-    color: white; */
+    margin: 30px;
 }
 
 .title {
@@ -106,7 +106,7 @@ article {
     line-height: 3rem;
 }
 
- .about-me-box p {
+.info p {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 550;
     line-height: 2rem;
@@ -117,9 +117,58 @@ article {
     padding-top: 20px;
     border-left: 5px solid;
     border-color: #000;
- }
+}
 
- .my-work {
+.projects {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    /* align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 30px;
+    margin-left: 30px; */
+}
+.title2 {
+    padding-left: 25px;
+    padding-bottom: 50px;
+    padding-right: 55px;
+    flex: 0 1 auto;
+    /* margin-top: 200px;
+    margin-bottom: 600px;
+    margin-left: -20px; */
+    font-size: 3rem;
+    line-height: 3rem;
+    border-right: 5px solid;
+    border-color: #000;
+}
+.projects h3 {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+/* .projects a {
+margin: 5px;
+vertical-align: bottom;
+flex-wrap: wrap;
+flex-direction: row; 
+} */
+
+.projects .img1 {
+    width: 1500px;
+    height: 100%;
+    padding-right: 200px;
+
+}
+.projects .img2 {
+    width: 200px;
+    height: 100%;
+    padding-left: 60px;
+    
+}
+
+ /* .my-work {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -141,7 +190,7 @@ article {
     border-right: 5px solid;
     border-color: #000;
  }
- 
+
  .links img {
     display: flex;
     flex-wrap: wrap;
@@ -156,4 +205,4 @@ article {
    border-color: rgb(26, 26, 26);
    max-width: 30%;
  }
-
+ */
