@@ -1,5 +1,4 @@
 * {
-    box-sizing: border-box
     font-size: 16px;
     line-height: 1.5rem;
     margin: 0px;
@@ -119,7 +118,98 @@ article {
     border-color: #000;
 }
 
-.projects {
+.my-work-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-item {
+
+}
+
+.container-item h4 {
+    font-family: monospace;
+    font-size: 2rem;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    padding: 10px;
+    width: fit-content;
+    margin-top: -20px;
+    margin-left: 20px;
+}
+
+.item-1 {
+    flex-shrink: 0;
+}
+
+.item-1 h3 {
+    font-size: 3rem;
+    line-height: 3rem;
+    border-right: 5px solid;
+    border-color: #000;
+    margin-left: 50px;
+    padding-right: 42px;
+    padding-bottom: 2200px;
+}
+
+.work-boxes {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-left: 15px;
+}
+
+.item-2 {
+    margin: 20px;
+}
+
+.item-2 img {
+    width: 1600px;
+    flex-shrink: 1;
+    border: 10px solid rgb(44, 44, 44);
+}
+
+.item-2 h4 {
+    font-family: monospace;
+    font-size: 2rem;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    padding: 10px;
+    width: fit-content;
+    margin-top: -10px;
+    margin-left: 0px;
+}
+
+.item-3 img {
+    width: 780px;
+    flex-shrink: 2;
+    margin:10px 10px 10px 20px;
+    border: 10px solid rgb(44, 44, 44);
+}
+
+.item-4 img {
+    width: 780px;
+    flex-shrink: 2;
+    margin:10px 10px 10px 20px;
+    border: 10px solid rgb(44, 44, 44);
+    
+}
+
+.item-5 img {
+    width: 780px;
+    flex-shrink: 2;
+    margin:10px 10px 10px 20px;
+    border: 10px solid rgb(44, 44, 44);
+}
+
+.item-6 img {
+    width: 780px;
+    flex-shrink: 2;
+    margin:10px 10px 10px 20px;
+    border: 10px solid rgb(44, 44, 44);
+}
+
+/* .projects {
     width: 90%;
     height: 100%;
     display: flex;
@@ -127,9 +217,9 @@ article {
     justify-content: flex-start;
     flex-wrap: wrap;
     margin: 30px;
-    margin-left: 30px; */
+    margin-left: 30px; 
 }
-.title2 {
+/* .title2 {
     padding-left: 25px;
     padding-bottom: 50px;
     padding-right: 55px;
@@ -146,7 +236,7 @@ article {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-}
+} */
 
 /* .projects a {
 margin: 5px;
@@ -155,7 +245,7 @@ flex-wrap: wrap;
 flex-direction: row; 
 } */
 
-.projects .img1 {
+/* .projects .img1 {
     width: 1500px;
     height: 100%;
     padding-right: 200px;
@@ -166,7 +256,7 @@ flex-direction: row;
     height: 100%;
     padding-left: 60px;
     
-}
+} */
 
  /* .my-work {
     display: flex;
@@ -204,5 +294,5 @@ flex-direction: row;
    border: 5px solid;
    border-color: rgb(26, 26, 26);
    max-width: 30%;
- }
- */
+ } 
+ 
