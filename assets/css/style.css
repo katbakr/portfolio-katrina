@@ -69,8 +69,9 @@ article {
     color: rgb(231, 231, 231);
 }
 #img-and-intro img {
+    max-width: 100%;
+    width: 600px;
     margin-top: 20px;
-    max-width: 25%;
     border: 15px solid rgb(231, 231, 231);
 }
 
@@ -158,7 +159,9 @@ article {
 }
 
 .item-2 img {
-    width: 1600px;
+    /* max-width: 100%; */
+    /* width: 1600px; */
+    width: 100%;
     box-shadow: 5px 5px rgb(210, 210, 210);
     border: 10px solid rgb(44, 44, 44);
 }
@@ -175,14 +178,18 @@ article {
 }
 
 .item-3 img {
-    width: 780px;
+    /* max-width: 100%; */
+    /* width: 780px; */
+    width: 45%;
     box-shadow: 5px 5px rgb(210, 210, 210);
     margin:10px 10px 10px 20px;
     border: 10px solid rgb(44, 44, 44);
 }
 
 .item-4 img {
-    width: 780px;
+    /* max-width: 100%; */
+    /* width: 780px; */
+    width: 45%;
     box-shadow: 5px 5px rgb(210, 210, 210);
     margin:10px 10px 10px 20px;
     border: 10px solid rgb(44, 44, 44);
@@ -190,14 +197,18 @@ article {
 }
 
 .item-5 img {
-    width: 780px;
+    /* max-width: 100%; */
+    /* width: 780px; */
+    width: 45%;
     box-shadow: 5px 5px rgb(210, 210, 210);
     margin:10px 10px 10px 20px;
     border: 10px solid rgb(44, 44, 44);
 }
 
 .item-6 img {
-    width: 780px;
+    /* max-width: 100%; */
+    /* width: 780px; */
+    width: 45%;
     box-shadow: 5px 5px rgb(210, 210, 210);
     margin:10px 10px 10px 20px;
     border: 10px solid rgb(44, 44, 44);
@@ -238,3 +249,29 @@ article {
     font-size: 2rem;
     color: black;
 }
+
+@media screen and (max-width: 992px) {
+    .conent {
+        width: 50%;
+    }
+    #img-and-intro {
+        width: 50%;
+    }
+    .my-work-container {
+        width: 50%;
+    }
+  }
+  
+  /* Cards are stacked on top of each other at 768px or smaller */
+  @media screen and (max-width: 768px) {
+    .conent {
+        width: 100%;
+    }
+    #img-and-intro {
+        width: 100%;
+    }
+    .my-work-container {
+      width: 100%;
+    }
+    
+  }
