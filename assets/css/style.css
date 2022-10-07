@@ -10,12 +10,13 @@ body {
 
 header {
     background-color: rgb(44, 44, 44);
-    padding: 10px;  
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
-
+/* monochromatic primary style for page using greys, black, and white
+color scheme */
 header h1 {
     margin-left: 60px;
     margin-top: 15px;
@@ -32,7 +33,8 @@ header nav ul {
     margin: 0%;
     list-style-type: none;
 }
-
+/* no bullet points on unordered list, should display along the top of
+header */
 header nav ul li {
     display: inline-block;
 }
@@ -50,16 +52,14 @@ nav a {
     align-items: center;
     background-color: rgb(26, 26, 26);
     padding: 8px;
-    
 }
-
 article {
     display: flex;
     flex-direction: column;
 }
 #img-and-intro h2 {
     font-size: 5rem;
-    font-family: monospace; 
+    font-family: monospace;
     line-height: 5rem;
     background-color: rgb(231, 231, 231);
     color: black;
@@ -68,6 +68,7 @@ article {
     box-shadow: 10px 10px 1px rgb(44, 44, 44);
     margin: 0px;
 }
+/* introduction with styling */
 #img-and-intro p {
     font-family: monospace;
     margin-top: 45px;
@@ -75,6 +76,7 @@ article {
     font-size: 1.5rem;
     color: rgb(231, 231, 231);
 }
+/* location and my main goal */
 #img-and-intro img {
     max-width: 50%;
     width: 600px;
@@ -87,8 +89,8 @@ article {
 .content {
     width: 90%;
     margin-left: 100px;
-
 }
+/* sizing for primary content on page */
 .info {
     width: 100%;
     display: flex;
@@ -96,7 +98,7 @@ article {
     justify-content: flex-start;
     margin: 30px;
 }
-
+/* size versitality for small screens using flex */
 .title {
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 50px;
@@ -109,7 +111,7 @@ article {
     flex-wrap: wrap;
     line-height: 3rem;
 }
-
+/* h3 offset to the left with border seperating h3 and p */
 .info p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
@@ -129,6 +131,8 @@ article {
     flex-direction: row;
     margin-top: 60px;
 }
+/* flex container for all projects in my work section, should allow size
+versitality */
 
 .container-item h4 {
     font-family: monospace;
@@ -140,12 +144,12 @@ article {
     margin-top: -20px;
     margin-left: 20px;
 }
-
+/* trying to create DRY css with h4 tag to style all lables on projects besides
+on big project img */
 .container-item{
     flex: 0 0 48%;
 }
-
-
+/* use flex so sizing on smaller screens should work */
 .item-1 h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3rem;
@@ -156,7 +160,8 @@ article {
     padding-right: 42px;
     padding-bottom: 2200px;
 }
-
+/* item 1 will be title for the my work section, needs to be inside of container
+for flex box */
 .work-boxes {
     display: flex;
     justify-content: space-between;
@@ -164,7 +169,7 @@ article {
     padding-left: 100px;
     margin-right: 400px;
 }
-
+/* container for all project imgs and links */
 .item-2 {
     margin: 20px;
     flex: 0 0 100%;
@@ -186,7 +191,7 @@ article {
     margin-top: -10px;
     margin-left: 0px;
 }
-
+/* needs to be seperate due to h4 adaptiveness */
 .item-3 img {
     width: 100%;
     box-shadow: 5px 5px rgb(210, 210, 210);
@@ -199,7 +204,7 @@ article {
     box-shadow: 5px 5px rgb(210, 210, 210);
     margin:10px 10px 10px 20px;
     border: 10px solid rgb(44, 44, 44);
-    
+
 }
 
 .item-5 img {
@@ -215,7 +220,8 @@ article {
     margin:10px 10px 10px 20px;
     border: 10px solid rgb(44, 44, 44);
 }
-
+/* needs to be updated to dry code, for some reason creating one class
+for all item imgs breaks them */
 .contact-me-box {
     display: flex;
     flex-direction: row;
@@ -223,9 +229,8 @@ article {
     flex-wrap: wrap;
     margin-top: 60px;
     margin-bottom: 40px;
-    
 }
-
+/* container for contact me section with flex */
 .contact-me-box h3 {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
@@ -239,7 +244,7 @@ article {
 }
 
 .contact-me-box ul {
-   list-style: none; 
+   list-style: none;
    display: flex;
    justify-content: flex-start;
 }
@@ -253,7 +258,21 @@ article {
     font-size: 2rem;
     color: black;
 }
-
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(26, 26, 26);
+    padding: 20px;
+}
+footer ul{
+    list-style: none;
+    font-family: monospace;
+    color: rgb(255, 255, 255);
+}
+footer li {
+    font-size: 1.5rem;
+}
 @media screen and (max-width: 992px) {
     .conent {
         width: 100%;
@@ -268,8 +287,7 @@ article {
         width: 50%;
   }
   }
-  
-  /* Cards are stacked on top of each other at 768px or smaller */
+
   @media screen and (max-width: 768px) {
     .conent {
         width: 100%;
@@ -284,3 +302,5 @@ article {
         width: 100%;
   }
 }
+/* content in containers are stacked on top of each other at
+768px or smaller */
